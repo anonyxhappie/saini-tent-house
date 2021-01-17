@@ -1,0 +1,88 @@
+html {
+    min-height:100%;
+    background:url('./images/efdf9_wedding-tent.jpg');
+    background-size:cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.9);
+    color: #f5ced4;
+}
+/* #6d6e71 */
+.main-container {
+    width: 100%;
+    height: 100%;
+}
+.nav {
+    height: 5rem;
+    width: 100%;
+    border-bottom: 1px solid #f5ced44a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin-top: 6rem;
+}
+
+.main {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.welcome-to {
+    font-family: 'Texturina', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #f5ced4;
+    width: fit-content;
+    margin: auto;
+    padding: 0 1rem;
+    color: #6d6e71;
+}
+.saini-tent-house {
+    font-family: 'Texturina', serif;
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: #f5ced4;
+    padding: 0 1rem;;
+    color: #6d6e71;
+}
+
+
+.button {
+    position: relative;
+    padding: 1.6em 2.8em;
+    text-decoration: none;
+  }
+  .button__canvas {
+    --offset: 32px;
+    position: absolute;
+    top: calc(var(--offset) * -1);
+    left: calc(var(--offset) * -1);
+    width: calc(100% + var(--offset) * 2);
+    height: calc(100% + var(--offset) * 2);
+    transition: opacity 2s ease;
+  }
+  .button__text {
+    position: relative;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    pointer-events: none;
+  }
+  .button:hover .button__canvas {
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+  }
+  .button:active .button__canvas {
+    opacity: 1;
+    transition: none;
+  }
